@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+:root {
+    --main-color: #f1f1f1;
+    --second-color: #757575;
+}
+
+/* navbar */
+header {
+    width: 110px;
+    background-color: #222;
+    position: fixed;
+    min-height: 100%;
+}
+
+header .navbar-image {
+    position: relative;
+}
+
+header .navbar-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header .navbar-image div {
+    width: 100%;
+    position: absolute;
+    top: 0; bottom: 0;
+    background-color: white;
+    opacity: .3;
+}
+
+header nav ul li a{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+header nav ul li a i {
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.active {
+    background-color: black;
+}
+
+.active:hover {
+    background-color: var(--main-color);
+    color: black;
+}
+
+header nav ul li a:not(.active):hover {
+    background-color: black;
+}
+
+.main{
+    margin-left: 110px;
+    padding: 0 14%;
+}
+
+/* home section */
+.home {
+    color: white;
+    text-align: center;
+}
+
+.home h1{
+    font-size: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.home span {
+    padding-right: 20px;
+}
+
+.home p {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.home img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* about section */
+.about h2, .photos h2, .contact h2{
+    color: var(--main-color);
+    font-size: 27px;
+    border-bottom: 1px solid var(--second-color);
+    width: 180px;
+    padding-bottom: 15px;
+}
+
+.about p {
+    color: var(--second-color);
+    text-align: justify;
+    padding-top: 15px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* skills section */
+.skills h2, .price h2, .reputation h2{
+    color: var(--main-color);
+    font-size: 22px;
+    padding: 35px 0 20px 0;
+}
+
+.skills .skills-char div p{
+    color: var(--second-color);
+    letter-spacing: 4px;
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+.skills-char .draw{
+    width: 100%;
+    height: 25px;
+    background-color: var(--main-color);
+}
+
+.skills-char .draw .draw-2 {
+    height: 100%;
+    background-color: var(--second-color);
+}
+
+.skills-char .char-1 .draw .draw-2 {
+    width: 90%;
+}
+
+.skills-char .char-2 .draw .draw-2 {
+    width: 83%;
+}
+
+.skills-char .char-3 .draw .draw-2 {
+    width: 75%;
+}
+
+.project-done {
+    margin: 35px 0 20px 0;
+    background-color: var(--main-color);
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.project-done div h3 {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.project-done div p {
+    font-size: 13px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #b9b8b8;
+}
+
+/* price section */
+.price .price-box {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.price .price-box .basic, .pro {
+    background-color: var(--main-color);
+    width: 50%;
+}
+
+.price .price-box .basic {
+    margin-right: 20px;
+}
+
+.price .price-box h3 {
+    background-color: var(--second-color);
+    padding: 30px 0;
+    color: var(--main-color);
+    font-size: 24px;
+}
+
+.price .price-box p {
+    padding: 15px 0;
+    font-size: 14px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.price-basic h4, .pro-basic h4 {
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+.price-basic, .pro-basic {
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.price-basic span, .pro-basic span {
+    padding-right: 10px;
+}
+
+.price-basic p, .pro-basic p {
+    font-size: 13px;
+}
+
+.sign-up-btn {
+    padding: 20px 0;
+    background-color: #dad8d8;
+}
+
+.sign-up-btn button {
+    padding: 10px 20px;
+}
+
+.sign-up-btn button:hover {
+    background-color: black;
+    color: var(--main-color);
+}
+
+.basic, .pro {
+    position: relative;
+    opacity: .5;
+}
+
+.basic:hover, .pro:hover{
+   opacity: 1;
+}
+
+/* reputation section*/
+.reputation .parent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reputation div img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 15px;
+}
+
+.reputation div p {
+    color: var(--second-color);
+}
+
+.reputation .parent .small {
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+/* photos section */
+.photos, .contact {
+    margin-top: 120px;
+}
+
+.photos .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.photos .parent div{
+    width: 100%;
+}
+
+.photos .parent div img {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+/* contact section */
+.contact p {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--second-color);
+}
+
+.contact p i {
+    padding-right: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.contact form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid transparent;
+    outline: 1px solid transparent;
+}
+
+
+.contact div input:focus {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border: 2px solid black;
+    outline: 1px solid white;
+}
+
+.contact form button {
+    text-transform: uppercase;
+}
+
+.form {
+    margin-top: 60px;
+}
+
+/* footer section */
+.footer {
+    margin-top: 110px;
+}
+
+.footer i {
+    color: var(--second-color);
+    font-size: 23px;
+    padding-right: 5px;
+    margin-bottom: 100px;
+}
+
+.footer i:hover {
+    color: rgb(85, 83, 83);
+}
+
+.nav-bar {
+    display: none;
+}
+
+
+
+
+@media(max-width: 600px){
+    .main {
+        margin-left: 0;
+    }
+    header {
+        display: none;
+    }
+
+    .price .price-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price .price-box .basic, .pro {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .project-done {
+        display: block;
+        width: 100%;
+        padding: 0;
+        
+    }
+    .project-done div h3 {
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    
+    .project-done div p {
+        padding-bottom: 20px;
+    }
+
+    .photos .parent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .nav-bar {
+        display: block;
+        width: 100%;
+        background-color: #222222bd;
+        position: fixed;
+        top: 0; right: 0; left: 0;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-bar ul li{
+        width: 25%;
+    }
+
+
+    .nav-bar ul a {
+        display: block;
+        color: var(--main-color);
+        text-transform: uppercase;
+        font-size: 13px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-bar ul a:hover {
+        background-color: var(--main-color);
+        color: #222;
+    }
+
+    .home span {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .main {
+        padding: 0 5%;
+    }
+}
